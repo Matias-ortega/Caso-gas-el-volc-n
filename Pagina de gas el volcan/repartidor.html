@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg" style="background-color: orange;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href=# style="color: black;">
+      <img src="Imagenes/Logo1.png" alt="error_carga_de_imagen" width="50" height="50" class="me-2">
+      Gas el volcan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav w-100" >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="Galones" href="InicioSesion.html">volver a inicio sesion</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="cuadro">
+    <h1>Estado del la entrega </h1>
+    <p>Cliente: cliente123@gmail.com</p>
+    <p>Direccion: quilicura pasaje puerto de huasco 654</p>
+    <p id="estado">Estado actual: sin envios</p>
+    <button onclick="cambiarEstado('procesando')">procesando pedido</button>
+    <button onclick="cambiarEstado('llegando')">llegando</button>
+    <button onclick="cambiarEstado('entregado')">entregado</button>
+</div>
+
+<div class="cuadro">
+    <h1>Estado del la entrega</h1>
+    <p>Cliente: cliente456@gmail.com</p>
+    <p>Direccion: renca pasaje renca 123</p>
+    <p id="estado1">Estado actual: sin envios</p>
+    <button onclick="cambiarEstado1('procesando')">procesando pedido</button>
+    <button onclick="cambiarEstado1('llegando')">llegando</button>
+    <button onclick="cambiarEstado1('entregado')">entregado</button>
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="repartidor.js"></script>
+</body>
+</html>
